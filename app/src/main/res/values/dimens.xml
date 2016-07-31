@@ -1,0 +1,28 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="ll_default_height">50dp</dimen>
+
+    <dimen name="iv_title_dimen">30dp</dimen>
+
+    <dimen name="iv_logo">150dp</dimen>
+
+    <dimen name="bt_bottom_height">40dp</dimen>
+
+    <dimen name="radius">5dp</dimen>
+
+    <dimen name="line_height">1dp</dimen>
+
+    <dimen name="dialog_base_width">280dp</dimen>
+    <dimen name="dialog_base_height">200dp</dimen>
+
+    <dimen name="tv_title_dimen">18sp</dimen>
+    <dimen name="tv_small">12sp</dimen>
+    <dimen name="tv_middle">14sp</dimen>
+    <dimen name="tv_large">16sp</dimen>
+
+    <dimen name="small_dimen">5dp</dimen>
+    <dimen name="default_dimen">10dp</dimen>
+    <dimen name="large_dimen">15dp</dimen>
+    <dimen name="xlarge_dimen">20dp</dimen>
+
+</resources>

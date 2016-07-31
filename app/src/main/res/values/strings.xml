@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">theLearn</string>
+    <string name="logout">退出登陆</string>
+    <string name="logout_tip">您确定退出登陆吗？</string>
+    <string name="tip">温馨提示</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="feed_back">意见反馈</string>
+    <string name="loading">请稍后...</string>
+    <string name="version_update_tip">您有新版本可以更新,确定更新版本至#a#吗?</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="hint_email">请输入邮箱</string>
+    <string name="hint_password">请输入密码</string>
+    <string name="login">登陆</string>
+    <string name="error_invalid_email">邮箱地址不合法!</string>
+    <string name="error_invalid_password">密码不符合要求!</string>
+    <string name="error_field_required">This field is required</string>
+
+    <!-- Strings related to main -->
+    <string name="brand">商品</string>
+    <string name="search">搜索</string>
+    <string name="home">主页</string>
+    <string name="shopping">购物车</string>
+    <string name="more">更多</string>
+
+    <!-- Strings related to download -->
+    <string name="downloading">正在下载</string>
+    <string name="download_success">下载成功</string>
+    <string name="download_fail">下载失败</string>
+    <string name="download_count">0%</string>
+</resources>

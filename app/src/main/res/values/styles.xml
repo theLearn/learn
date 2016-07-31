@@ -1,0 +1,147 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+
+    </style>
+
+    <style name="AppFullTheme" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorDefault</item>
+        <item name="colorPrimaryDark">@color/colorDefault</item>
+        <item name="colorAccent">@color/colorDefault</item>
+        <item name="actionMenuTextColor">@color/colorWhite</item>
+        <item name="android:textColorPrimary">@color/colorBlack</item>
+        <item name="android:windowBackground">@color/default_background</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="ToolBarTitle" parent="">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="ToolBarMenuText" parent="">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+    <style name="ToolBarStyle" parent="Widget.AppCompat.Toolbar">
+        <item name="actionMenuTextAppearance">@style/ToolBarMenuText</item>
+        <item name="titleTextAppearance">@style/ToolBarTitle</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <!-- Base View style. -->
+
+    <style name="ll_default">
+        <item name="android:layout_height">@dimen/ll_default_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:padding">@dimen/default_dimen</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@color/colorWhite</item>
+    </style>
+
+    <style name="tv_title">
+        <item name="android:textSize">@dimen/tv_title_dimen</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="tv_default">
+        <item name="android:textSize">@dimen/tv_middle</item>
+        <item name="android:textColor">@color/text_default</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="tv_large" parent="tv_default">
+        <item name="android:textSize">@dimen/tv_large</item>
+    </style>
+
+    <style name="tv_small" parent="tv_default">
+        <item name="android:textSize">@dimen/tv_small</item>
+        <item name="android:textColor">@color/text_gray</item>
+    </style>
+
+    <style name="iv_title">
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_width">@dimen/iv_title_dimen</item>
+        <item name="android:layout_height">@dimen/iv_title_dimen</item>
+    </style>
+
+    <style name="bt_bottom">
+        <item name="android:background">@drawable/bg_bt_bottom</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/tv_title_dimen</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:layout_margin">@dimen/default_dimen</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/bt_bottom_height</item>
+    </style>
+
+    <style name="tv_button">
+        <item name="android:background">@drawable/tv_button</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/tv_title_dimen</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:layout_margin">@dimen/default_dimen</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/bt_bottom_height</item>
+    </style>
+
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="loading" >
+        <item name="android:layout_height">@dimen/tv_title_dimen</item>
+        <item name="android:layout_width">@dimen/tv_title_dimen</item>
+        <item name="android:indeterminate">false</item>
+        <item name="android:indeterminateDrawable">@drawable/loading</item>
+    </style>
+
+    <style name="progress_Horizontal" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:layout_height">@dimen/large_dimen</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:maxHeight">@dimen/large_dimen</item>
+        <item name="android:minHeight">@dimen/large_dimen</item>
+        <item name="android:progressDrawable">@drawable/progress_horizontal2</item>
+    </style>
+
+    <style name="text_input_et">
+        <item name="android:textSize">@dimen/tv_large</item>
+        <item name="android:textColor">@color/text_default</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="rb_default">
+        <item name="android:textSize">@dimen/tv_small</item>
+        <item name="android:textColor">@color/text_default_second</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+</resources>

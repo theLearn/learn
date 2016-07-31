@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/default_dimen">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_download_tip"
+            style="@style/tv_large"
+            android:text="@string/downloading"/>
+        <TextView
+            android:layout_marginLeft="@dimen/default_dimen"
+            android:id="@+id/tv_download_process"
+            style="@style/tv_large"
+            android:text="@string/download_count"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_marginTop="@dimen/default_dimen"
+        android:id="@+id/pb_download"
+        style="@style/progress_Horizontal"/>
+
+</LinearLayout>

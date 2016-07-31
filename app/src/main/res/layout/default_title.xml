@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ll_default"
+    android:background="@color/colorDefault">
+
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/iv_back"
+        style="@style/iv_title"
+        android:src="@mipmap/back"/>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/tv_title"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name" />
+        <ProgressBar
+            android:id="@+id/pb_default"
+            android:layout_marginLeft="@dimen/small_dimen"
+            android:visibility="gone"
+            android:layout_toRightOf="@+id/tv_title"
+            android:layout_centerVertical="true"
+            style="@style/loading"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/iv_menu"
+        style="@style/iv_title"
+        android:src="@mipmap/menu"/>
+</LinearLayout>
