@@ -26,6 +26,7 @@ import java.util.List;
  */
 public class FileUtils {
 
+    private final static String TAG = FileUtils.class.getName();
     public final static String FILE_EXTENSION_SEPARATOR = "";
 
     private FileUtils() {
@@ -694,6 +695,43 @@ public class FileUtils {
         } catch (IOException e) {
             e.printStackTrace();
             return null;
+        }
+    }
+
+    public static void deleteFile(File file)
+    {
+        if (null == file || !file.exists())
+        {
+            return;
+        }
+
+        if (file.isDirectory())
+        {
+            File[] subFiles = file.listFiles();
+
+            if (null == subFiles || 0 == subFiles.length)
+            {
+                // 删除空目录
+                LoggerUtils.debug(TAG, "blank directory file.delete()=" + file.delete());
+            }
+            else
+            {
+                for (File oneFile : subFiles)
+                {
+                    deleteFile(oneFile);
+                }
+
+                String[] tmpSubs = file.list();
+                if (null == tmpSubs || 0 == tmpSubs.length)
+                {
+                    // 如果这个目录空了 就直接删除
+                    LoggerUtils.debug(TAG, "a directory file.delete()=" + file.delete());
+                }
+            }
+        }
+        else
+        {
+            LoggerUtils.debug(TAG, "a file file.delete()=" + file.delete());
         }
     }
 

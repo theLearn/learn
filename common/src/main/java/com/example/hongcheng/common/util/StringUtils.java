@@ -2,6 +2,9 @@ package com.example.hongcheng.common.util;
 
 import android.content.Context;
 
+import java.nio.charset.Charset;
+import java.util.Locale;
+
 /**
  * Created by hongcheng on 16/3/26.
  */
@@ -13,6 +16,38 @@ public class StringUtils {
             return true;
         }
         return false;
+    }
+
+    public static String byte2String(byte[] bytes)
+    {
+        if (bytes == null)
+        {
+            return "";
+        }
+        else
+        {
+            return new String(bytes, Charset.forName("UTF-8"));
+        }
+    }
+
+    public static String bytesToHexString(byte[] bArray)
+    {
+        StringBuffer sb = new StringBuffer(bArray.length);
+        String sTemp;
+
+        for (int i = 0; i < bArray.length; i++)
+        {
+            sTemp = Integer.toHexString(0xFF & bArray[i]);
+
+            if (sTemp.length() < 2)
+            {
+                sb.append(0);
+            }
+
+            sb.append(sTemp.toLowerCase(Locale.getDefault()));
+        }
+
+        return sb.toString();
     }
 
     public static String replaceStr(Context context, int resId, String... replaces){
